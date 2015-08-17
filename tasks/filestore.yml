@@ -1,0 +1,3 @@
+---
+- name: Create Marathon artifact store directory
+  file: path=/var/log/store state=directory

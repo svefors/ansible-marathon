@@ -1,0 +1,4 @@
+
+artifact_store: "file:///var/log/store"
+
+checkpoint: "true"
