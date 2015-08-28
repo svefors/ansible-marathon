@@ -10,5 +10,9 @@
 - include: haproxy.yml
   when: haproxy_script_location != ""
 
+- include: filestore.yml
+  when: "'file:///' in {{ artifact_store }}"
+
+  when: artifact_store | match
 - name: Start Marathon service
-  service: name=marathon state=restarted 
+  service: name=marathon state=restarted

@@ -1,8 +1,8 @@
 ---
-marathon_playbook_version: "0.3.1"
+marathon_playbook_version: "0.4.0"
 
 marathon_hostname: "{{ inventory_hostname }}"
-marathon_version: "0.8.0"
+marathon_version: "0.10.0"
 marathon_port: 8080
 marathon_apt_repo: "deb http://repos.mesosphere.io/{{ansible_distribution|lower}} {{ansible_distribution_release|lower}} main"
 
@@ -17,5 +17,3 @@ marathon_zookeeper_state: "zk://{{ zookeeper_hostnames }}{{ marathon_zookeeper_p
 haproxy_script_location: "/usr/local/bin"
 
 # optional
-artifact_store: ""
-checkpoint: "true"
